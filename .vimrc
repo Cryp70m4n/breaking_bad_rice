@@ -33,6 +33,7 @@ set encoding=utf-8
 call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'bfrg/vim-cpp-modern'
 call plug#end()
 
 
