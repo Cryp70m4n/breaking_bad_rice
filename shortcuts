@@ -4,7 +4,7 @@ DMENU='dmenu -i -l 4'
 choice=$(echo -e "browser\nimages\nshutdown\nquit-shortcuts" | $DMENU)
 
 case "$choice" in
-    browser) $1 | cat ~/.config/bookmarks | dmenu -i| xargs chromium;;
+    browser) $1 | cat ~/.config/bookmarks | dmenu -i -l 10 | xargs chromium;;
     images) cd ~/Pictures | ls ~/Pictures/*.{png,jpg,jpeg} | dmenu -i -l 10 | xargs feh;;
     shutdown) ~/.conf/exit_menu;;
     quit-shortcuts) exit 0;;
