@@ -65,7 +65,7 @@ static const char *sscmd[] = {"flameshot", "gui", NULL};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD("search") },
+	{ MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD("shortcuts") },
 	{ MODKEY|ShiftMask,		XK_s,	   spawn,	   {.v = sscmd } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
