@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 DMENU='dmenu -i -l 4'
 choice=$(echo -e "shutdown\nreboot\nquit" | $DMENU)
