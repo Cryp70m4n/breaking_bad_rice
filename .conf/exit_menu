@@ -1,0 +1,10 @@
+#!/bin/bash
+
+DMENU='dmenu -i -l 4'
+choice=$(echo -e "shutdown\nreboot\nquit" | $DMENU)
+
+case "$choice" in
+	shutdown) shutdown now;;
+	reboot) reboot;;
+	quit) exit 0;;
+esac
