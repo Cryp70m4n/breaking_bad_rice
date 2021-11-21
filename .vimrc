@@ -34,6 +34,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'bfrg/vim-cpp-modern'
 Plug 'alpertuna/vim-header'
+Plug 'vim-scripts/fpc.vim'
 call plug#end()
 
 let g:header_field_author = 'Mr. Pascal'
@@ -43,6 +44,7 @@ let g:header_field_modified_by = 0
 map <F4> :AddHeader<CR>
 map <F5> :AddAGPLicense<CR>
 
+autocmd BufNewFile,BufRead *.pp set syntax=pascal
 
 " Syntax on
 syntax on
