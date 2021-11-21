@@ -20,7 +20,7 @@ set incsearch
 set nohlsearch
 
 
-" " Scrolling
+" Scrolling
 set scrolloff=8
 
 
